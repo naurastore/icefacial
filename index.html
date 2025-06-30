@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Facial Capsule - Kulit Glowing dalam 7 Hari</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #FFFFFF 0%, #E6F3FF 100%);
+        }
+        
+        .glow {
+            animation: glow 2s infinite alternate;
+        }
+        
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 5px #FFB6C1;
+            }
+            to {
+                box-shadow: 0 0 20px #FFD700;
+            }
+        }
+        
+        .sparkle {
+            position: relative;
+        }
+        
+        .sparkle::after {
+            content: "✨";
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            font-size: 1.2rem;
+            animation: sparkle 2s infinite;
+        }
+        
+        @keyframes sparkle {
+            0% { opacity: 0; transform: scale(0.5); }
+            50% { opacity: 1; transform: scale(1); }
+            100% { opacity: 0; transform: scale(0.5); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .price-badge {
+            background: linear-gradient(135deg, #FFD700 0%, #FFB6C1 100%);
+        }
+        
+        .before-after {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .before-after img {
+            transition: all 0.5s ease;
+        }
+        
+        .before-after:hover img {
+            transform: scale(1.05);
+        }
+        
+        .before-after::before {
+            content: "SEBELUM";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(0,0,0,0.5);
+            color: white;
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .before-after::after {
+            content: "SESUDAH";
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.5);
+            color: white;
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .countdown {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+        
+        .view-counter {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98w-lqjzsyd0c0ov93.webp" alt="Rokeet Logo" class="h-12 w-auto">
+                <span class="ml-2 text-xl font-bold text-pink-500">NAURA STORE</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#features" class="text-gray-700 hover:text-pink-500 transition">Manfaat</a>
+                <a href="#ingredients" class="text-gray-700 hover:text-pink-500 transition">Komposisi</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-pink-500 transition">Testimoni</a>
+                <a href="#how-to-use" class="text-gray-700 hover:text-pink-500 transition">Cara Pakai</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="#features" class="block py-2 text-gray-700 hover:text-pink-500 transition">Manfaat</a>
+            <a href="#ingredients" class="block py-2 text-gray-700 hover:text-pink-500 transition">Komposisi</a>
+            <a href="#testimonials" class="block py-2 text-gray-700 hover:text-pink-500 transition">Testimoni</a>
+            <a href="#how-to-use" class="block py-2 text-gray-700 hover:text-pink-500 transition">Cara Pakai</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-12 md:py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0 fade-in">
+                <h1 class="text-3xl md:text-5xl font-bold text-gray-800 mb-4 leading-tight">
+                    Wujudkan Kulit <span class="text-pink-500">Glowing</span> Impian dengan Formula Teruji Klinis
+                </h1>
+                <p class="text-lg text-gray-600 mb-6">
+                    Ice Facial Capsule dari Rokeet memberikan perawatan wajah profesional di rumah dengan hasil klinis dalam 7 hari.
+                </p>
+                
+                <div class="bg-white rounded-lg p-6 shadow-lg mb-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <div>
+                            <span class="line-through text-gray-500">Rp 210.000</span>
+                            <span class="ml-2 text-sm bg-red-100 text-red-600 px-2 py-1 rounded">Hemat 50%</span>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-xs text-gray-500">Harga Salon</span>
+                            <div class="text-2xl font-bold text-pink-600">Rp 140.000</div>
+                            <span class="text-xs text-gray-500">Promo Online</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-blue-50 border border-blue-100 rounded-lg p-3 mb-4 flex items-center">
+                        <i class="fas fa-clock text-blue-500 mr-2"></i>
+                        <div>
+                            <div class="text-sm text-gray-700">Promo berakhir dalam:</div>
+                            <div id="countdown" class="countdown text-lg font-bold text-blue-600"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-pink-50 border border-pink-100 rounded-lg p-3 flex items-center">
+                        <i class="fas fa-eye text-pink-500 mr-2"></i>
+                        <div>
+                            <div class="text-sm text-gray-700">Beauty lovers sedang melihat produk ini:</div>
+                            <div id="view-counter" class="view-counter text-lg font-bold text-pink-600">124</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="#order" class="block w-full bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-bold py-4 px-6 rounded-lg text-center shadow-lg glow transition duration-300 transform hover:scale-105">
+                    <i class="fas fa-shopping-cart mr-2"></i> PESAN SEKARANG
+                </a>
+            </div>
+            
+            <div class="md:w-1/2 relative">
+                <div class="relative">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lqjzsyd0g83q64.webp" alt="Ice Facial Capsule" class="w-full h-auto rounded-lg shadow-xl transform rotate-1">
+                    <div class="absolute -bottom-4 -right-4 bg-white p-2 rounded-full shadow-lg">
+                        <div class="bg-blue-100 text-blue-800 rounded-full p-3">
+                            <i class="fas fa-certificate text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex mt-4 space-x-2">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98s-lqjzsyd0ettrce.webp" alt="Product detail" class="w-1/4 h-auto rounded-lg cursor-pointer hover:shadow-md transition">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98r-lqjzsyd0df9b76.webp" alt="Product detail" class="w-1/4 h-auto rounded-lg cursor-pointer hover:shadow-md transition">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r991-lqjzsyd0onieeb.webp" alt="Product detail" class="w-1/4 h-auto rounded-lg cursor-pointer hover:shadow-md transition">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98r-lqjzsyd0alty22.webp" alt="Product detail" class="w-1/4 h-auto rounded-lg cursor-pointer hover:shadow-md transition">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="bg-blue-50 py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-6 md:gap-12">
+                <div class="flex items-center">
+                    <div class="bg-white p-2 rounded-full mr-2">
+                        <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                    </div>
+                    <span class="text-sm md:text-base">Formula Teruji Klinis</span>
+                </div>
+                <div class="flex items-center">
+                    <div class="bg-white p-2 rounded-full mr-2">
+                        <i class="fas fa-leaf text-green-500 text-xl"></i>
+                    </div>
+                    <span class="text-sm md:text-base">Bahan Alami</span>
+                </div>
+                <div class="flex items-center">
+                    <div class="bg-white p-2 rounded-full mr-2">
+                        <i class="fas fa-user-md text-blue-500 text-xl"></i>
+                    </div>
+                    <span class="text-sm md:text-base">Direkomendasikan Dermatolog</span>
+                </div>
+                <div class="flex items-center">
+                    <div class="bg-white p-2 rounded-full mr-2">
+                        <i class="fas fa-shield-alt text-blue-500 text-xl"></i>
+                    </div>
+                    <span class="text-sm md:text-base">Aman untuk Kulit Sensitif</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Benefits -->
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Mengapa Ice Facial Capsule?</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Solusi perawatan wajah profesional di rumah dengan manfaat klinis yang terbukti</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 border border-gray-100 transform hover:-translate-y-2">
+                    <div class="bg-blue-100 text-blue-600 w-14 h-14 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-flask text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-3 text-gray-800">Clinically Tested Formula</h3>
+                    <p class="text-gray-600 text-center">Formula teruji klinis yang aman untuk kulit sensitif Indonesia dengan hasil yang konsisten.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 border border-gray-100 transform hover:-translate-y-2">
+                    <div class="bg-pink-100 text-pink-600 w-14 h-14 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-calendar-check text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-3 text-gray-800">Visible Results in 7 Days</h3>
+                    <p class="text-gray-600 text-center">Hasil terlihat dalam 7 hari dengan pemakaian rutin sesuai petunjuk penggunaan.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 border border-gray-100 transform hover:-translate-y-2">
+                    <div class="bg-green-100 text-green-600 w-14 h-14 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-seedling text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-3 text-gray-800">Natural Safe Ingredients</h3>
+                    <p class="text-gray-600 text-center">Bahan alami pilihan yang tidak menyebabkan iritasi dan cocok untuk semua jenis kulit.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 border border-gray-100 transform hover:-translate-y-2">
+                    <div class="bg-purple-100 text-purple-600 w-14 h-14 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-user-md text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-3 text-gray-800">Dermatologist Recommended</h3>
+                    <p class="text-gray-600 text-center">Direkomendasikan dermatologist untuk perawatan kulit wajah sehari-hari.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinical Results -->
+    <section class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Hasil Klinis yang Terbukti</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700">Kulit Lebih Lembap</span>
+                                <span class="text-blue-600 font-bold">92%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700">Pori-Pori Mengecil</span>
+                                <span class="text-blue-600 font-bold">87%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 87%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700">Kulit Lebih Glowing</span>
+                                <span class="text-blue-600 font-bold">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700">Kemerahan Berkurang</span>
+                                <span class="text-blue-600 font-bold">83%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 83%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-6 text-gray-600 text-sm italic">*Berdasarkan studi klinis pada 100 responden wanita Indonesia usia 20-35 tahun selama 14 hari pemakaian.</p>
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-bold mb-4 text-gray-800">Testimoni Pengguna</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="User" class="w-12 h-12 rounded-full mr-4">
+                                <div>
+                                    <div class="flex items-center mb-1">
+                                        <span class="font-bold text-gray-800">Sarah, 28</span>
+                                        <div class="ml-2 flex text-yellow-400">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-600">"Dalam 1 minggu pemakaian, kulit wajah saya terasa lebih lembut dan glowing. Jerawat kecil juga berkurang!"</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="User" class="w-12 h-12 rounded-full mr-4">
+                                <div>
+                                    <div class="flex items-center mb-1">
+                                        <span class="font-bold text-gray-800">Dewi, 31</span>
+                                        <div class="ml-2 flex text-yellow-400">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-600">"Saya memiliki kulit sensitif dan produk ini tidak menyebabkan iritasi sama sekali. Hasilnya sangat memuaskan!"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients -->
+    <section id="ingredients" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Komposisi Premium</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Bahan-bahan alami pilihan yang bekerja sinergis untuk kulit sehat glowing</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition">
+                    <div class="bg-green-50 p-4 rounded-lg mb-4">
+                        <i class="fas fa-leaf text-3xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Aloe Vera Extract</h3>
+                    <p class="text-gray-600">Melembapkan kulit, mengurangi kemerahan, dan menenangkan iritasi.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition">
+                    <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                        <i class="fas fa-tint text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Hyaluronic Acid</h3>
+                    <p class="text-gray-600">Mengikat kelembapan hingga 1000x beratnya untuk kulit yang terhidrasi sempurna.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition">
+                    <div class="bg-pink-50 p-4 rounded-lg mb-4">
+                        <i class="fas fa-spa text-3xl text-pink-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Niacinamide</h3>
+                    <p class="text-gray-600">Mencerahkan kulit, mengurangi pori-pori, dan memperkuat skin barrier.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition">
+                    <div class="bg-purple-50 p-4 rounded-lg mb-4">
+                        <i class="fas fa-seedling text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Green Tea Extract</h3>
+                    <p class="text-gray-600">Antioksidan kuat yang melawan radikal bebas dan menenangkan kulit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before After -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Hasil Nyata Pengguna</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Lihat transformasi kulit dalam 14 hari pemakaian rutin</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="before-after rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98v-lqjzsyd0am4f5f.webp" alt="Before After" class="w-full h-auto">
+                </div>
+                <div class="before-after rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lqjzsyd0deyuce.webp" alt="Before After" class="w-full h-auto">
+                </div>
+                <div class="before-after rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98w-lqjzsyd0c0ov93.webp" alt="Before After" class="w-full h-auto">
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-gray-600 mb-6">"Produk ini benar-benar mengubah rutinitas perawatan kulit saya. Hasilnya lebih baik dari perawatan salon!"</p>
+                <div class="flex items-center justify-center">
+                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="User" class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <div class="font-bold text-gray-800">Rina, 25</div>
+                        <div class="text-sm text-gray-500">Pengguna setia sejak 2023</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Use -->
+    <section id="how-to-use" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Cara Penggunaan</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Ikuti langkah sederhana ini untuk hasil maksimal</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-blue-50 p-6 rounded-xl shadow-md border border-blue-100">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 font-bold">1</div>
+                        <h3 class="text-xl font-bold text-gray-800">Bersihkan Wajah</h3>
+                    </div>
+                    <p class="text-gray-600">Gunakan cleanser untuk membersihkan wajah dari makeup dan kotoran sebelum menggunakan Ice Facial Capsule.</p>
+                </div>
+                
+                <div class="bg-pink-50 p-6 rounded-xl shadow-md border border-pink-100">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-pink-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 font-bold">2</div>
+                        <h3 class="text-xl font-bold text-gray-800">Aplikasikan Produk</h3>
+                    </div>
+                    <p class="text-gray-600">Ambil sedikit produk dengan spatula bersih, aplikasikan secara merata ke seluruh wajah dengan gerakan memijat lembut.</p>
+                </div>
+                
+                <div class="bg-purple-50 p-6 rounded-xl shadow-md border border-purple-100">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 font-bold">3</div>
+                        <h3 class="text-xl font-bold text-gray-800">Pijat dengan Roller</h3>
+                    </div>
+                    <p class="text-gray-600">Gunakan roller untuk memijat wajah selama 3-5 menit untuk meningkatkan penyerapan produk dan sirkulasi darah.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-gradient-to-r from-blue-100 to-pink-100 rounded-xl p-8 shadow-inner">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-6 md:mb-0">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Tips Tambahan</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Simpan di kulkas untuk sensasi dingin yang lebih menyegarkan</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Gunakan pagi dan malam hari untuk hasil optimal</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Hindari area mata yang sensitif</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98s-lqjzsyd0ettrce.webp" alt="Usage" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Apa Kata Mereka?</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Testimoni nyata dari beauty lovers Indonesia</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <div class="font-bold text-gray-800">Anita</div>
+                            <div class="text-sm text-gray-500">@anitabeauty</div>
+                        </div>
+                    </div>
+                    <div class="flex mb-3 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Produk ini benar-benar game changer! Kulit wajah saya yang kusam sekarang jadi glowing alami. Sudah 3 botol saya beli!"</p>
+                    <div class="flex space-x-2">
+                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98r-lqjzsyd0df9b76.webp" alt="Testimoni" class="w-1/3 h-auto rounded">
+                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r991-lqjzsyd0onieeb.webp" alt="Testimoni" class="w-1/3 h-auto rounded">
+                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98r-lqjzsyd0alty22.webp" alt="Testimoni" class="w-1/3 h-auto rounded">
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <div class="font-bold text-gray-800">Maya</div>
+                            <div class="text-sm text-gray-500">@mayaskincare</div>
+                        </div>
+                    </div>
+                    <div class="flex mb-3 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Sebagai pemilik kulit sensitif, saya sangat berhati-hati memilih produk. Ice Facial Capsule ini tidak menyebabkan iritasi sama sekali!"</p>
+                    <div class="flex space-x-2">
+                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98v-lqjzsyd0am4f5f.webp" alt="Testimoni" class="w-1/2 h-auto rounded">
+                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lqjzsyd0deyuce.webp" alt="Testimoni" class="w-1/2 h-auto rounded">
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/29.jpg" alt="User" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <div class="font-bold text-gray-800">Dina</div>
+                            <div class="text-sm text-gray-500">@dina.glow</div>
+                        </div>
+                    </div>
+                    <div class="flex mb-3 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600">"Saya sudah mencoba banyak produk mahal, tapi hasilnya tidak sebaik ini. Dalam 2 minggu, jerawat kecil saya hilang dan kulit lebih cerah!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="order" class="py-16 bg-gradient-to-r from-blue-500 to-pink-500">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 p-8">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">Ice Facial Capsule</h2>
+                        <p class="text-gray-600 mb-6">Wujudkan kulit glowing impian Anda sekarang juga!</p>
+                        
+                        <div class="flex items-center mb-6">
+                            <div class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-bold mr-3">BESTSELLER</div>
+                            <div class="flex items-center text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="text-gray-600 ml-1">(1.248 reviews)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <div class="flex items-end mb-2">
+                                <span class="text-3xl font-bold text-pink-600">Rp 140.000</span>
+                                <span class="ml-2 line-through text-gray-500">Rp 210.000</span>
+                                <span class="ml-2 bg-red-100 text-red-600 px-2 py-1 rounded text-sm">Hemat 50%</span>
+                            </div>
+                            <div class="text-sm text-gray-500">Harga normal salon Rp 210.000 | Promo online Rp 140.000</div>
+                        </div>
+                        
+                        <div class="bg-blue-50 border border-blue-100 rounded-lg p-3 mb-6">
+                            <div class="flex items-center">
+                                <i class="fas fa-gift text-blue-500 mr-2"></i>
+                                <div>
+                                    <div class="text-sm text-gray-700">Gratis ongkir seluruh Indonesia untuk pembelian hari ini!</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span class="text-gray-700">Stok tersisa: 87 pcs</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span class="text-gray-700">Pengiriman 1-3 hari kerja</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span class="text-gray-700">Garansi 100% uang kembali</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 bg-gray-50 p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6 text-center">Form Pemesanan</h3>
+                        
+                        <!-- OrderOnline Embed Code - v8.0.4 -->
+                        <div class="ooef">
+                            <form class="orderonline-embed-form" data-username="rara" data-product-slug="ice-facial-capsule" data-product-id="6862c3b8bfe8be22e100c18c" id="oo-embed-form-ice-facial-capsule-8408" data-origin="orderonline">
+                                <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+                            </form>
+                        </div>
+                        <script>
+                            if (typeof xLogError != 'function') {
+                                var xLogError = function (error) {
+                                    var req = new XMLHttpRequest();
+                                    var payload = JSON.stringify({
+                                        url: document.location.href,
+                                        line: error.line,
+                                        stack: error.stack
+                                    });
+                                    var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                                    req.open('POST', 'https://api.orderonline.id/log', true);
+                                    req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                                    req.send(params);
+                                };
+                            }
+                            try {
+                                if (typeof xEmbedScript != 'function') {
+                                    var xEmbedScript = function () {
+                                        !function(w, d, e, v, id, t, s) {
+                                            if (d.getElementById(id)) return;
+                                            t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                            s = d.getElementsByTagName(e)[0];
+                                            s.parentNode.insertBefore(t, s);
+                                        }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                                    };
+                                }
+                                if (typeof xEmbedInit != 'function') {
+                                    var xEmbedInit = function (w, n) {
+                                        if (w.ooe) return;
+                                        n = w.ooe = function() {
+                                            n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                                        };
+                                        if (!w._ooe) w._ooe = n;
+                                        n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                                    };
+                                }
+                                xEmbedInit(window);
+                                ooe('setup', 'redirect', 'https://rara.orderonline.id');
+                                ooe('init', '5f12ee789d8e8e5e870172ee', '6862c3b8bfe8be22e100c18c', null, 'oo-embed-form-ice-facial-capsule-8408', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false});
+                                if (!window.jQuery) {
+                                    !function(w, d, e, v, id, t, s) {
+                                        if (d.getElementById(id)) return;
+                                        t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                        t.addEventListener('load', xEmbedScript);
+                                        s = d.getElementsByTagName(e)[0];
+                                        s.parentNode.insertBefore(t, s);
+                                    }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+                                } else {
+                                    xEmbedScript();
+                                }
+                            } catch (e) {
+                                xLogError(e);
+                                throw e;
+                            }
+                        </script>
+                        <!-- End OrderOnline Embed Code -->
+                        
+                        <div class="mt-6 border-t pt-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-green-100 text-green-800 p-2 rounded-full mr-3">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-bold text-gray-800">Pembayaran Aman</div>
+                                    <div class="text-xs text-gray-500">Data Anda terlindungi dengan enkripsi 256-bit</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Pertanyaan yang Sering Diajukan</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Temukan jawaban atas pertanyaan Anda tentang Ice Facial Capsule</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition">
+                        <span class="text-lg font-medium text-gray-800 text-left">Apa saja manfaat Ice Facial Capsule?</span>
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 bg-white">
+                        <p class="text-gray-600">Ice Facial Capsule memberikan manfaat lengkap untuk perawatan wajah, termasuk: melembapkan kulit, mengecilkan pori-pori, mengurangi kemerahan, mencerahkan wajah, dan memberikan efek glowing alami. Produk ini juga membantu mengurangi tanda-tanda penuaan dini seperti garis halus dan kerutan.</p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition">
+                        <span class="text-lg font-medium text-gray-800 text-left">Berapa lama hasilnya terlihat?</span>
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 bg-white">
+                        <p class="text-gray-600">Berdasarkan studi klinis dan testimoni pengguna, hasil mulai terlihat dalam 3-7 hari pemakaian rutin. Untuk hasil optimal, kami sarankan penggunaan selama 14-28 hari secara konsisten. Sensasi dingin dan kesegaran langsung terasa sejak pemakaian pertama.</p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition">
+                        <span class="text-lg font-medium text-gray-800 text-left">Apakah aman untuk kulit sensitif?</span>
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 bg-white">
+                        <p class="text-gray-600">Ya, Ice Facial Capsule diformulasikan khusus untuk kulit sensitif Indonesia. Produk ini telah melewati uji klinis dermatologi dan bebas dari bahan berbahaya seperti paraben, SLS, alkohol, dan pewangi sintetis. Namun, jika Anda memiliki kondisi kulit khusus, disarankan melakukan patch test terlebih dahulu.</p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition">
+                        <span class="text-lg font-medium text-gray-800 text-left">Bagaimana cara penyimpanannya?</span>
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 bg-white">
+                        <p class="text-gray-600">Untuk hasil terbaik, simpan Ice Facial Capsule di tempat sejuk dan kering, hindari paparan sinar matahari langsung. Anda juga bisa menyimpannya di kulkas untuk sensasi dingin yang lebih menyegarkan saat digunakan. Pastikan tutup rapat setelah digunakan untuk menjaga kualitas produk.</p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition">
+                        <span class="text-lg font-medium text-gray-800 text-left">Apakah ada garansi uang kembali?</span>
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 bg-white">
+                        <p class="text-gray-600">Kami memberikan garansi 100% uang kembali jika produk tidak sesuai deskripsi atau rusak saat diterima. Untuk klaim garansi, harap menghubungi customer service kami dalam waktu 3 hari setelah produk diterima dengan melampirkan foto produk dan bukti pembelian.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+
+    <!-- Floating WhatsApp -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/6281234567890" class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        
+        // Countdown timer
+        function updateCountdown() {
+            const now = new Date();
+            const endOfDay = new Date();
+            endOfDay.setHours(23, 59, 59, 999);
+            
+            const diff = endOfDay - now;
+            
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('countdown').innerHTML = `${hours}j ${minutes}m ${seconds}d`;
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        // View counter animation
+        function animateViewCounter() {
+            let counter = 124;
+            const element = document.getElementById('view-counter');
+            
+            setInterval(() => {
+                counter += Math.floor(Math.random() * 3);
+                element.textContent = counter;
+            }, 5000);
+        }
+        
+        animateViewCounter();
+        
+        // FAQ toggle
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!document.getElementById('mobile-menu').classList.contains('hidden')) {
+                        document.getElementById('mobile-menu').classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
